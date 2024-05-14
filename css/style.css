@@ -1,0 +1,220 @@
+:root {
+	--normal: rgb(168, 168, 120);
+	--fighting: rgb(192, 48, 40);
+	--flying: rgb(168, 144, 240);
+	--poison: rgb(160, 64, 160);
+	--ground: rgb(224, 192, 104);
+	--rock: rgb(184, 160, 56);
+	--bug: rgb(168, 184, 32);
+	--ghost: rgb(112, 88, 152);
+	--steel: rgb(184, 184, 208);
+	--fire: rgb(240, 128, 48);
+	--water: rgb(104, 144, 240);
+	--grass: rgb(120, 200, 80);
+	--electric: rgb(248, 208, 48);
+	--psychic: rgb(248, 88, 136);
+	--ice: rgb(152, 216, 216);
+	--dragon: rgb(112, 56, 248);
+	--dark: rgb(112, 88, 72);
+	--fairy: rgb(238, 153, 172);
+	--hp: rgb(255, 89, 89);
+	--attack: rgb(245, 172, 120);
+	--defense: rgb(250, 224, 120);
+	--special-attack: rgb(157, 183, 245);
+	--special-defense: rgb(167, 219, 141);
+	--speed: rgb(250, 146, 178);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	overflow: hidden;
+}
+
+select {
+	margin: 5px;
+	padding: 5px;
+	width: 100%;
+}
+
+body {
+	display: flex;
+}
+
+body > section {
+	position: sticky;
+	top: 0;
+	border-right: 1px solid black;
+	height: 100vh;
+	overflow: auto;
+	background-color: lightgray;
+	width: 318px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section:first-of-type > div {
+	margin-left: 2px;
+	margin-right: 2px;
+	text-align: center;
+}
+
+div > section {
+	display: flex;
+	gap: 30px;
+}
+
+aside {
+	overflow: auto;
+	top: 0;
+	height: 100vh;
+	width: calc(100vw - 318px);
+}
+
+aside > section {
+	display: flex;
+	padding: 25px;
+	padding-bottom: 0px;
+	width: 100%;
+}
+
+aside > section > img {
+	margin-right: 100px;
+	margin-bottom: auto;
+	margin-top: auto;
+	width: 192px;
+	max-width: 192px;
+	height: auto;
+	max-height: 192px;
+}
+
+aside > section > section {
+	gap: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: auto;
+}
+
+aside > section > h1 {
+	width: 100%;
+}
+
+aside > section:first-of-type {
+	flex-wrap: wrap;
+}
+
+aside > section:first-of-type > div > div {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+section:first-of-type figure {
+	margin-bottom: 10px;
+}
+
+aside > section:nth-of-type(2) {
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+aside > section:nth-of-type(2) > div {
+	height: fit-content;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 70%;
+}
+
+aside > section:nth-of-type(2) > div:last-of-type {
+	min-width: 429px;
+	width: fit-content;
+	padding: 20px;
+}
+
+.type {
+	padding: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 30px;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+aside > section > div > * {
+	margin-bottom: 15px;
+}
+
+aside > div {
+	background-color: lightgray;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-around;
+}
+
+figure {
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+figcaption {
+	padding-bottom: 5px;
+}
+
+ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+li {
+	margin-bottom: 5px;
+	display: flex;
+}
+
+canvas {
+	margin-left: auto;
+	margin-right: 0px;
+}
+
+aside > section:nth-of-type(3) {
+	gap: 75px;
+	min-height: fit-content;
+	max-height: 500px;
+	padding: 0px;
+	padding-left: 10px;
+}
+
+aside > section:nth-of-type(3) > div:last-of-type {
+	margin-left: auto;
+	margin-right: 50px;
+	height: 300px;
+	width: 210px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+aside > section:nth-of-type(3) * {
+	gap: 10px;
+	margin: 0px;
+	margin-top: 3px;
+}
+
+aside > section:nth-of-type(3) div:last-of-type h2 {
+	text-align: center;
+	grid-column: 1 / 3;
+}
